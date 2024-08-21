@@ -1,6 +1,6 @@
 module("luci.controller.wolplus", package.seeall)
-local t, a
-local x = luci.model.uci.cursor()
+local LUCI_HTTP = require("luci.http")
+local LUCI_UCI = require("luci.model.uci").cursor()
 
 function index()
     if not nixio.fs.access("/etc/config/wolplus") then return end
@@ -9,8 +9,8 @@ function index()
 end
 
 function awake(sections)
-	lan = x:get("wolplus",sections,"maceth")
-	mac = x:get("wolplus",sections,"macaddr")
+	lan = LUCI_UCI:get("wolplus", sections, "maceth")
+	mac = LUCI_UCI:get("wolplus", sections, "macaddr")
     local e = {}
     cmd = "/usr/bin/etherwake -D -i " .. lan .. " -b " .. mac .. " 2>&1"
 	local p = io.popen(cmd)
@@ -28,6 +28,6 @@ function awake(sections)
 		p:close()
 	end
 	e["data"] = msg
-    luci.http.prepare_content("application/json")
-    luci.http.write_json(e)
+    LUCI_HTTP.prepare_content("application/json")
+    LUCI_HTTP.write_json(e)
 end
