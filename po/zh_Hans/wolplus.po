@@ -48,4 +48,4 @@ msgstr "网络唤醒+"
 #: luasrc/model/cbi/wolplus.lua:3
 msgid ""
 "Wake on LAN is a mechanism to remotely boot computers in the local network."
-msgstr "网络唤醒是一种远程唤醒本地网络中计算机的工具。"
+msgstr "网络唤醒是一种远程启动局域网内计算机的机制。"
