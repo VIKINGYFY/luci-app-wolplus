@@ -1,11 +1,11 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 #: luasrc/view/wolplus/index.htm:14
 msgid "&"
 msgstr ""
 
-#: luasrc/model/cbi/wolplus.lua:22
+#: luasrc/model/cbi/wolplus.lua:24
 msgid "Awake"
 msgstr "唤醒"
 
@@ -13,19 +13,19 @@ msgstr "唤醒"
 msgid "Grant UCI access for luci-app-wolplus"
 msgstr "授予 luci-app-wolplus UCI 访问权限"
 
-#: luasrc/model/cbi/wolplus.lua:5
+#: luasrc/model/cbi/wolplus.lua:7
 msgid "Host Clients"
 msgstr "客户端"
 
-#: luasrc/model/cbi/wolplus.lua:13
+#: luasrc/model/cbi/wolplus.lua:15
 msgid "MAC Address"
 msgstr "硬件地址"
 
-#: luasrc/model/cbi/wolplus.lua:10
+#: luasrc/model/cbi/wolplus.lua:12
 msgid "Name"
 msgstr "主机名称"
 
-#: luasrc/model/cbi/wolplus.lua:17
+#: luasrc/model/cbi/wolplus.lua:19
 msgid "Network Interface"
 msgstr "网络接口"
 
@@ -33,19 +33,19 @@ msgstr "网络接口"
 msgid "Please [Save & Apply] your changes first"
 msgstr "请先 [保存并应用] 您的更改"
 
-#: luasrc/model/cbi/wolplus.lua:21
+#: luasrc/model/cbi/wolplus.lua:23
 msgid "Wake Up Host"
 msgstr "唤醒主机"
 
-#: luasrc/controller/wolplus.lua:7
+#: luasrc/controller/wolplus.lua:8
 msgid "Wake on LAN"
 msgstr ""
 
-#: luasrc/model/cbi/wolplus.lua:3
+#: luasrc/model/cbi/wolplus.lua:5
 msgid "Wake on LAN +"
 msgstr "网络唤醒+"
 
-#: luasrc/model/cbi/wolplus.lua:3
+#: luasrc/model/cbi/wolplus.lua:5
 msgid ""
 "Wake on LAN is a mechanism to remotely boot computers in the local network."
 msgstr "网络唤醒是一种远程启动局域网内计算机的机制。"

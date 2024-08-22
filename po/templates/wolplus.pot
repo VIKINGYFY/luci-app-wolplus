@@ -37,7 +37,7 @@ msgstr ""
 msgid "Wake Up Host"
 msgstr ""
 
-#: luasrc/controller/wolplus.lua:7
+#: luasrc/controller/wolplus.lua:8
 msgid "Wake on LAN"
 msgstr ""
 
