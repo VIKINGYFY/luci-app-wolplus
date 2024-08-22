@@ -18,9 +18,9 @@ LUCI_SYS.net.mac_hints(function(e, t) nolimit_mac:value(e, "%s (%s)" % {e, t}) e
 nolimit_eth = e:option(Value, "maceth", translate("Network Interface"))
 nolimit_eth.rmempty = false
 for t, e in ipairs(LUCI_SYS.net.devices()) do
-    if e ~= "lo" then
-        nolimit_eth:value(e)
-    end
+	if e ~= "lo" then
+		nolimit_eth:value(e)
+	end
 end
 ----- wake device
 btn = e:option(Button, "_awake",translate("Wake Up Host"))
@@ -29,16 +29,16 @@ btn.inputstyle	= "apply"
 btn.disabled	= false
 btn.template = "wolplus/awake"
 function gen_uuid(format)
-    local uuid = LUCI_SYS.exec("echo -n $(cat /proc/sys/kernel/random/uuid)")
-    if format == nil then
-        uuid = string.gsub(uuid, "-", "")
-    end
-    return uuid
+	local uuid = LUCI_SYS.exec("echo -n $(cat /proc/sys/kernel/random/uuid)")
+	if format == nil then
+		uuid = string.gsub(uuid, "-", "")
+	end
+	return uuid
 end
 function e.create(e, t)
-    local uuid = gen_uuid()
-    t = uuid
-    TypedSection.create(e, t)
+	local uuid = gen_uuid()
+	t = uuid
+	TypedSection.create(e, t)
 end
 
 return t
