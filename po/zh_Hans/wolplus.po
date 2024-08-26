@@ -43,7 +43,7 @@ msgstr ""
 
 #: luasrc/model/cbi/wolplus.lua:4
 msgid "Wake on LAN +"
-msgstr "网络唤醒+"
+msgstr ""
 
 #: luasrc/model/cbi/wolplus.lua:4
 msgid ""
